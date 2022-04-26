@@ -37,8 +37,13 @@ class AdminNav extends Component {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#">
+              <Link className="nav-link" to="/manageusers">
                 Manage Users
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="../user/dashboard/user">
+                Go to User Homepage
               </Link>
             </li>
           </ul>
