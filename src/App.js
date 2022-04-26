@@ -29,6 +29,7 @@ import {
   returnABook,
   borrowingHistory
 } from "./utils/api";
+import ManageUser from "./components/admin/manageusers/manageUsers";
 
 /**
  * Main app file
@@ -48,7 +49,7 @@ class App extends Component {
       user: {},
       loggedIn: false,
       registered: false,
-      isAdmin: null,
+      isAdmin: true,
       library: [],
       renderModal: false,
       renderDeleteAlert: false,
@@ -412,6 +413,27 @@ class App extends Component {
               renderDeleteAlert={this.state.renderDeleteAlert}
               library={this.state.library}
               component={ManageBooks}
+              getBooks={this.getBooks}
+              toggleModal={this.toggleModal}
+              newBook={this.newBook}
+              updateBook={this.updateBook}
+              bookErrors={this.state.bookErrors}
+              deleteBookErrors={this.state.deleteBookErrors}
+              toggleDeleteAlert={this.toggleDeleteAlert}
+              deleteBook={this.deleteBook}
+              loader={<Loader />}
+              loading={this.state.loading}
+              page={this.state.page}
+              totalPages={this.state.totalPages}
+              scrolling={this.state.scrolling}
+              loadMore={this.loadMore}
+            />
+            <PrivateRoute
+              path="/manageusers"
+              renderModal={this.state.renderModal}
+              renderDeleteAlert={this.state.renderDeleteAlert}
+              library={this.state.library}
+              component={ManageUser}
               getBooks={this.getBooks}
               toggleModal={this.toggleModal}
               newBook={this.newBook}

@@ -40,6 +40,12 @@ class UserNav extends Component {
                 Borrowing History
               </Link>
             </li>
+            <li className = "nav-item">
+                <Link className="nav-link" to='/admin'>
+                  Admin Page
+                </Link>
+
+              </li>
           </ul>
         </div>
 

@@ -48,7 +48,7 @@ class AdminDash extends Component {
                     </div>
                     <div className="panel-body">
                       <h1 className="text-center admin-panel-link">
-                        <Link to="/managebooks">Manage Users</Link>
+                        <Link to="/manageusers">Manage Users</Link>
                       </h1>
                     </div>
                   </div>
