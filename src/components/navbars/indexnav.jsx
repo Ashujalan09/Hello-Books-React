@@ -10,9 +10,9 @@ class IndexNav extends Component {
     
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <Link className="navbar-brand" to="/">
-            Hello Books
+            Book It
           </Link>
           <button
             className="navbar-toggler"
@@ -31,11 +31,6 @@ class IndexNav extends Component {
               <li className="nav-item active">
                 <Link className="nav-link" to="/">
                   Home <span className="sr-only">(current)</span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  About Us
                 </Link>
               </li>
               <li className="nav-item">

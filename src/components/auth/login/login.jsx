@@ -42,8 +42,8 @@ class Login extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6 login-left text-center">
-              <h1>WELCOME AVID READER</h1>
-              <p>We are happy to have you here</p>
+              <h1>WELCOME</h1>
+              <p>Glad to have you here</p>
             </div>
             <div className="col-md-6">
               <div className="login-form">

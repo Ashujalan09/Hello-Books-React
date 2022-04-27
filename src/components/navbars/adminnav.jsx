@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 class AdminNav extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top index-nav">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top index-nav">
         <Link className="navbar-brand" to="/admin">
           Hello Books
         </Link>
